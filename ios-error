@@ -1,0 +1,546 @@
+Running "flutter pub get" in e7gz-call-center...
+Launching lib/main.dart on iPhone 12 Pro Max in debug mode...
+Running pod install...
+Running Xcode build...
+Xcode build done.                                           200.5s
+Failed to build iOS app
+Error output from Xcode build:
+↳
+    ** BUILD FAILED **
+
+
+Xcode's output:
+↳
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/audioplayers-0.17.4/darwin/Classes/NotificationsHandler.swift:174:75: warning: 'init(image:)' was deprecated in iOS 10.0: Use -initWithBoundsSize:requestHandler:
+                        let albumArt: MPMediaItemArtwork = MPMediaItemArtwork.init(image: artworkImage)
+                                                                              ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:13:5: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+        UILocalNotification *_launchNotification;
+        ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:293:4: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+    - (UILocalNotification *)buildStandardUILocalNotification:(NSDictionary *)arguments {
+       ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:752:30: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+    didReceiveLocalNotification:(UILocalNotification*)notification {
+                                 ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:182:64: warning: 'scheduledLocalNotifications' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter getPendingNotificationRequestsWithCompletionHandler:] [-Wdeprecated-declarations]
+        NSArray *notifications = [UIApplication sharedApplication].scheduledLocalNotifications;
+                                                                   ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:242:68: note: 'scheduledLocalNotifications' has been explicitly marked deprecated here
+    @property(nullable,nonatomic,copy) NSArray<UILocalNotification *> *scheduledLocalNotifications API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter getPendingNotificationRequestsWithCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+                                                                       ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:185:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification* localNotification = [notifications objectAtIndex:i];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:277:9: warning: 'UIUserNotificationType' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNAuthorizationOptions [-Wdeprecated-declarations]
+            UIUserNotificationType notificationTypes = 0;
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:17:32: note: 'UIUserNotificationType' has been explicitly marked deprecated here
+    typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
+                                   ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:279:34: warning: 'UIUserNotificationTypeSound' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNAuthorizationOptions [-Wdeprecated-declarations]
+                notificationTypes |= UIUserNotificationTypeSound;
+                                     ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:17:32: note: 'UIUserNotificationType' has been explicitly marked deprecated here
+    typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
+                                   ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:282:34: warning: 'UIUserNotificationTypeAlert' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNAuthorizationOptions [-Wdeprecated-declarations]
+                notificationTypes |= UIUserNotificationTypeAlert;
+                                     ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:17:32: note: 'UIUserNotificationType' has been explicitly marked deprecated here
+    typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
+                                   ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:285:34: warning: 'UIUserNotificationTypeBadge' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNAuthorizationOptions [-Wdeprecated-declarations]
+                notificationTypes |= UIUserNotificationTypeBadge;
+                                     ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:17:32: note: 'UIUserNotificationType' has been explicitly marked deprecated here
+    typedef NS_OPTIONS(NSUInteger, UIUserNotificationType) {
+                                   ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:287:9: warning: 'UIUserNotificationSettings' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationSettings [-Wdeprecated-declarations]
+            UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notificationTypes categories:nil];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:44:12: note: 'UIUserNotificationSettings' has been explicitly marked deprecated here
+    @interface UIUserNotificationSettings : NSObject
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:287:76: warning: 'UIUserNotificationSettings' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationSettings [-Wdeprecated-declarations]
+            UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:notificationTypes categories:nil];
+                                                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h:44:12: note: 'UIUserNotificationSettings' has been explicitly marked deprecated here
+    @interface UIUserNotificationSettings : NSObject
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:288:44: warning: 'registerUserNotificationSettings:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:] and -[UNUserNotificationCenter setNotificationCategories:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:250:1: note: 'registerUserNotificationSettings:' has been explicitly marked deprecated here
+    - (void)registerUserNotificationSettings:(UIUserNotificationSettings *)notificationSettings API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter requestAuthorizationWithOptions:completionHandler:] and -[UNUserNotificationCenter setNotificationCategories:]", ios(8.0, 10.0)) API_UNAVAILABLE(tvos);
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:294:5: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+        ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:294:63: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+        UILocalNotification *notification = [[UILocalNotification alloc] init];
+                                                                  ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:333:34: warning: 'UILocalNotificationDefaultSoundName' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's +[UNNotificationSound defaultSound] [-Wdeprecated-declarations]
+            notification.soundName = UILocalNotificationDefaultSoundName;
+                                     ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:62:30: note: 'UILocalNotificationDefaultSoundName' has been explicitly marked deprecated here
+    UIKIT_EXTERN NSString *const UILocalNotificationDefaultSoundName API_DEPRECATED("Use UserNotifications Framework's +[UNNotificationSound defaultSound]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+                                 ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:349:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:350:44: warning: 'presentLocalNotificationNow:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:236:1: note: 'presentLocalNotificationNow:' has been explicitly marked deprecated here
+    - (void)presentLocalNotificationNow:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:362:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:387:44: warning: 'scheduleLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:238:1: note: 'scheduleLocalNotification:' has been explicitly marked deprecated here
+    - (void)scheduleLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);  // copies notification
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:407:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:409:44: warning: 'scheduleLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:238:1: note: 'scheduleLocalNotification:' has been explicitly marked deprecated here
+    - (void)scheduleLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);  // copies notification
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:420:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:441:44: warning: 'scheduleLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:238:1: note: 'scheduleLocalNotification:' has been explicitly marked deprecated here
+    - (void)scheduleLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);  // copies notification
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:460:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:468:44: warning: 'scheduleLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:238:1: note: 'scheduleLocalNotification:' has been explicitly marked deprecated here
+    - (void)scheduleLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);  // copies notification
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:489:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification * notification = [self buildStandardUILocalNotification:arguments];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:498:44: warning: 'scheduleLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:238:1: note: 'scheduleLocalNotification:' has been explicitly marked deprecated here
+    - (void)scheduleLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter addNotificationRequest:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);  // copies notification
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:510:68: warning: 'scheduledLocalNotifications' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter getPendingNotificationRequestsWithCompletionHandler:] [-Wdeprecated-declarations]
+            NSArray *notifications = [UIApplication sharedApplication].scheduledLocalNotifications;
+                                                                       ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:242:68: note: 'scheduledLocalNotifications' has been explicitly marked deprecated here
+    @property(nullable,nonatomic,copy) NSArray<UILocalNotification *> *scheduledLocalNotifications API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter getPendingNotificationRequestsWithCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+                                                                       ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:512:13: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+                UILocalNotification* localNotification = [notifications objectAtIndex:i];
+                ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:515:52: warning: 'cancelLocalNotification:' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter removePendingNotificationRequestsWithIdentifiers:] [-Wdeprecated-declarations]
+                    [[UIApplication sharedApplication] cancelLocalNotification:localNotification];
+                                                       ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:239:1: note: 'cancelLocalNotification:' has been explicitly marked deprecated here
+    - (void)cancelLocalNotification:(UILocalNotification *)notification API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter removePendingNotificationRequestsWithIdentifiers:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:529:44: warning: 'cancelAllLocalNotifications' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenter removeAllPendingNotificationRequests] [-Wdeprecated-declarations]
+            [[UIApplication sharedApplication] cancelAllLocalNotifications];
+                                               ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:240:1: note: 'cancelAllLocalNotifications' has been explicitly marked deprecated here
+    - (void)cancelAllLocalNotifications API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenter removeAllPendingNotificationRequests]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos);
+    ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:741:9: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification *launchNotification = (UILocalNotification *)[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+            ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:741:52: warning: 'UILocalNotification' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's UNNotificationRequest [-Wdeprecated-declarations]
+            UILocalNotification *launchNotification = (UILocalNotification *)[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+                                                       ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h:18:12: note: 'UILocalNotification' has been explicitly marked deprecated here
+    @interface UILocalNotification : NSObject<NSCopying, NSCoding>
+               ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:741:102: warning: 'UIApplicationLaunchOptionsLocalNotificationKey' is deprecated: first deprecated in iOS 10.0 - Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:] [-Wdeprecated-declarations]
+            UILocalNotification *launchNotification = (UILocalNotification *)[launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+                                                                                          ^
+    In module 'UIKit' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Target Support Files/flutter_local_notifications/flutter_local_notifications-prefix.pch:2:
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h:504:50: note: 'UIApplicationLaunchOptionsLocalNotificationKey' has been explicitly marked deprecated here
+    UIKIT_EXTERN UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsLocalNotificationKey     NS_SWIFT_NAME(localNotification) API_DEPRECATED("Use UserNotifications Framework's -[UNUserNotificationCenterDelegate didReceiveNotificationResponse:withCompletionHandler:]", ios(4.0, 10.0)) API_UNAVAILABLE(tvos); // userInfo contains a UILocalNotification
+                                                     ^
+    /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.m:751:1: warning: implementing deprecated method [-Wdeprecated-implementations]
+    - (void)application:(UIApplication*)application
+    ^
+    In module 'Flutter' imported from /Users/karim/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-4.0.1+2/ios/Classes/FlutterLocalNotificationsPlugin.h:1:
+    /Users/karim/tools/flutter/bin/cache/artifacts/engine/ios/Flutter.xcframework/ios-x86_64-simulator/Flutter.framework/Headers/FlutterPlugin.h:98:1: note: method 'application:didReceiveLocalNotification:' declared here
+    - (void)application:(UIApplication*)application
+    ^
+    35 warnings generated.
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:29: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:33: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:29: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:33: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:29: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:83:57: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                            ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:33: warning: initialization of 'UnsafeMutablePointer<UInt8>' results in a dangling pointer
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: implicit argument conversion from '[UInt8]' to 'UnsafeMutablePointer<UInt8>' produces a pointer valid only for the duration of the call to 'init(_:)'
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/Starscream/Sources/Starscream/Compression.swift:145:61: note: use the 'withUnsafeMutableBufferPointer' method on Array in order to explicitly convert argument to buffer pointer valid for a defined scope
+                    strm.next_out = UnsafeMutablePointer<UInt8>(&buffer)
+                                                                ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:77:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "allowsCellularConnection")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:86:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "connection.description")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:191:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection != .none`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:196:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .cellular`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:202:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .wifi`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:43:5: warning: 'public' modifier is redundant for static property declared in a public extension
+        public static let reachabilityChanged = Notification.Name("reachabilityChanged")
+        ^~~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:77:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "allowsCellularConnection")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:86:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "connection.description")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:191:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection != .none`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:196:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .cellular`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:202:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .wifi`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:43:5: warning: 'public' modifier is redundant for static property declared in a public extension
+        public static let reachabilityChanged = Notification.Name("reachabilityChanged")
+        ^~~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:77:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "allowsCellularConnection")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:86:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, renamed: "connection.description")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:191:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection != .none`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:196:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .cellular`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:202:6: warning: unexpected version number in 'available' attribute for non-specific platform '*'
+        @available(*, deprecated: 4.0, message: "Please use `connection == .wifi`")
+         ^                      ~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/ReachabilitySwift/Sources/Reachability.swift:43:5: warning: 'public' modifier is redundant for static property declared in a public extension
+        public static let reachabilityChanged = Notification.Name("reachabilityChanged")
+        ^~~~~~~
+
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:17:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:35:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == Int)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:36:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:37:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:38:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt16)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:39:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt32)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:40:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt64)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:27:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:32:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift:22:13: warning: variable 'bytesArray' was never mutated; consider changing to 'let' constant
+            var bytesArray = bytes
+            ~~~ ^
+            let
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:17:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:35:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == Int)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:36:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:37:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:38:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt16)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:39:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt32)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:40:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt64)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:27:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:32:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift:22:13: warning: variable 'bytesArray' was never mutated; consider changing to 'let' constant
+            var bytesArray = bytes
+            ~~~ ^
+            let
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:17:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:35:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == Int)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:36:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:37:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt8)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:38:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt16)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:39:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt32)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Generics.swift:40:24: warning: 'exported: true' has no effect in '_specialize' attribute
+    @_specialize(exported: true, where T == UInt64)
+                           ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt16+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:27:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt32+Extension.swift:32:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:18:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/UInt64+Extension.swift:23:28: warning: 'exported: true' has no effect in '_specialize' attribute
+        @_specialize(exported: true, where T == ArraySlice<UInt8>)
+                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Pods/CryptoSwift/Sources/CryptoSwift/Foundation/Data+Extension.swift:22:13: warning: variable 'bytesArray' was never mutated; consider changing to 'let' constant
+            var bytesArray = bytes
+            ~~~ ^
+            let
+    While building module 'PusherSwift' imported from /Volumes/Untitled/Aisent Projects/e7gz-call-center/build/ios/Debug-iphonesimulator/pusher_websocket_flutter/pusher_websocket_flutter.framework/Headers/pusher_websocket_flutter-Swift.h:193:
+    In file included from <module-includes>:2:
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/build/ios/Debug-iphonesimulator/PusherSwift/PusherSwift.framework/Headers/PusherSwift-Swift.h:1099:12: warning: parameter 'channelName' not found in the function declaration [-Wdocumentation]
+    /// \param channelName The name of the channel
+               ^~~~~~~~~~~
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/build/ios/Debug-iphonesimulator/PusherSwift/PusherSwift.framework/Headers/PusherSwift-Swift.h:1099:12: note: did you mean 'channel'?
+    /// \param channelName The name of the channel
+               ^~~~~~~~~~~
+               channel
+    1 warning generated.
+    1 warning generated.
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Runner/AppDelegate.swift:11:60: warning: conditional cast from 'AppDelegate' to 'UNUserNotificationCenterDelegate' always succeeds
+            UNUserNotificationCenter.current().delegate = self as? UNUserNotificationCenterDelegate
+                                                               ^
+    /Volumes/Untitled/Aisent Projects/e7gz-call-center/ios/Runner/AppDelegate.swift:13:5: error: cannot find 'GeneratedPluginRegistrant' in scope
+        GeneratedPluginRegistrant.register(with: self)
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+    note: Using new build system
+    note: Building targets in parallel
+    note: Planning build
+    note: Constructing build description
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'CryptoSwift' from project 'Pods')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'Starscream' from project 'Pods')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'ReachabilitySwift' from project 'Pods')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'PusherSwift' from project 'Pods')
+    warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 9.0 to 14.4.99. (in target 'Flutter' from project 'Pods')
+
+Could not build the application for the simulator.
+Error launching application on iPhone 12 Pro Max.

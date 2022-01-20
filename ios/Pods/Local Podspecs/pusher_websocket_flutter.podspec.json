@@ -1,0 +1,31 @@
+{
+  "name": "pusher_websocket_flutter",
+  "version": "0.1.1",
+  "summary": "A new flutter plugin project.",
+  "description": "Pusher Flutter Client",
+  "homepage": "https://github.com/HomeXLabs/pusher-websocket-flutter",
+  "license": {
+    "file": "../../LICENSE"
+  },
+  "authors": {
+    "HomeX": "jrai@homex.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "swift_versions": "4.2",
+  "dependencies": {
+    "Flutter": [
+
+    ],
+    "PusherSwift": [
+      "7.0.0"
+    ]
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_version": "4.2"
+}
